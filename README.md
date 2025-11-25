@@ -7,34 +7,22 @@ It fetches real-time AQI using the WAQI API and includes an intelligent caching 
 Frontend (React)
 
 Modern responsive UI
-
 Light/Dark mode toggle
-
 City suggestions dropdown
-
 Animated AQI card
-
 Loading + error indicators
-
 Backend (Spring Boot)
 
 REST API:
-
 GET /api/aqi?city={cityName}
-
-
 WAQI API integration
-
 In-memory caching (5-minute expiry)
-
 Faster repeated queries
-
 Environment variable support using .env
 
 📦 Tech Stack
 
 Frontend: React, Axios, CSS
-
 Backend: Spring Boot, RestTemplate, Dotenv, Maven
 
 ⚙️ Backend Setup (Spring Boot)
@@ -61,15 +49,9 @@ App URL:
 http://localhost:5173
 
 🧠 Caching Logic
-
 The backend uses an in-memory ConcurrentHashMap to store previous WAQI responses.
-
 Cache Features:
-
 Expires every 5 minutes
-
 Returns results instantly for repeated queries
-
 Reduces WAQI API calls
-
 Ensures faster performance
